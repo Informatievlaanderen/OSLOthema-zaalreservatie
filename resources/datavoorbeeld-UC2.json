@@ -1,0 +1,53 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Reservation",
+  "reservationId": "https://example.com/reservation/654321",
+  "reservationFor": {
+    "@type": "Event",
+    "name": "Tijdelijke Openbare Expositie",
+    "location": {
+      "@type": "Place",
+      "name": "Gemeenschapszaal",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Hoofdstraat 10",
+        "addressLocality": "Mortsel",
+        "postalCode": "2640",
+        "addressCountry": "BE"
+      }
+    },
+    "startDate": "2024-06-01T10:00:00+01:00",
+    "endDate": "2024-06-30T18:00:00+01:00"
+  },
+  "underName": {
+    "@type": "Organization",
+    "name": "Kunstenaars Vereniging",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@kunstenaarsvereniging.be"
+    }
+  },
+  "reservationStatus": "http://schema.org/ReservationPending",
+  "provider": {
+    "@type": "Organization",
+    "name": "Gemeente Mortsel",
+    "email": "reserveringen@mortsel.be"
+  },
+  "requiredAttendee": [
+    {
+      "@type": "Role",
+      "roleName": "Beveiligingsvereisten",
+      "description": "Vereisten voor het beveiligen van de expositieruimte."
+    },
+    {
+      "@type": "Role",
+      "roleName": "Toegangsprocedures",
+      "description": "Procedures voor toegang tot de zaal tijdens het evenement."
+    },
+    {
+      "@type": "Role",
+      "roleName": "Annuleringsvoorwaarden",
+      "description": "Voorwaarden en regels omtrent annulering van de expositie."
+    }
+  ]
+}
