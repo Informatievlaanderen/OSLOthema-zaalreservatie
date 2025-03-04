@@ -1,0 +1,64 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Reservation",
+  "reservationId": "https://example.com/reservation/345678",
+  "reservationFor": {
+    "@type": "Event",
+    "name": "Sporttraining",
+    "location": {
+      "@type": "SportsActivityLocation",
+      "name": "Sportcomplex Leuven",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Sportlaan 1",
+        "addressLocality": "Leuven",
+        "postalCode": "3000",
+        "addressCountry": "BE"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "Opdeelbare Ruimtes",
+          "value": "Ja"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Kleedkamers Vrouwen",
+          "value": "Beschikbaar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Kleedkamers Mannen",
+          "value": "Beschikbaar"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Opslagruimte",
+          "value": "Aanwezig"
+        }
+      ]
+    },
+    "availability": "https://example.com/availability/sportscomplex",
+    "startDate": "2025-11-01T10:00:00+01:00",
+    "endDate": "2025-11-01T12:00:00+01:00"
+  },
+  "underName": {
+    "@type": "Organization",
+    "name": "Sportclub Leuven",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@sportclubleuven.be"
+    }
+  },
+  "reservationStatus": "http://schema.org/ReservationPending",
+  "provider": {
+    "@type": "Organization",
+    "name": "Stad Leuven",
+    "email": "reserveringen@leuven.be"
+  },
+  "potentialAction": {
+    "@type": "CheckAction",
+    "name": "Compatibiliteitscontrole",
+    "description": "Controleert op conflicterende activiteiten zoals geluidsoverlast of speelveld overlap."
+  }
+}
