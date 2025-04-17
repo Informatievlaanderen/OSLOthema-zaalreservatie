@@ -29,7 +29,20 @@
     "name": "Charter Zaalreservatie",
     "resourceReference": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie/blob/standaardenregister/charter/Charter%20Zaalreservatie.pdf"
   },
-  "reports": [],
+  "reports":   [
+    {
+      "name": "Verslag Business Werkgroep - 14 januari 2025",
+      "resourceReference": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie/blob/standaardenregister/reports/Verslag%20BW%20OSLO%20Zaalreservatie.pdf"
+    },
+    {
+      "name": "Verslag Thematische Werkgroep I - 18 februari 2025",
+      "resourceReference": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie/blob/standaardenregister/reports/Verslag%20TW1%20OSLO%20Zaalreservatie.pdf"
+    },
+    {
+      "name": "Verslag Thematische Werkgroep II - 18 maart 2025",
+      "resourceReference": "https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie/blob/standaardenregister/reports/Verslag%20TW2%20OSLO%20Zaalreservatie.pdf"
+    }
+  ],
   "presentations": [
    {
       "name": "Presentatie Business Werkgroep -  14 januari 2025",
