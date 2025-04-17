@@ -2,7 +2,7 @@
   "title": "Applicatieprofiel Zaalreservatie",
   "category": "Applicatieprofiel",
   "usage": "Aanbevolen (vrijwillig)",
-  "status": "Standaard in ontwikkeling",
+  "status": "Standaard-in-ontwikkeling",
   "responsibleOrganisation": [
     {
       "name": "Agentschap Digitaal Vlaanderen",
@@ -10,9 +10,20 @@
     }
   ],
   "publicationDate": "2025-04-17",
-  "descriptionFileName": "",
-  "specificationDocuments": [],
-  "documentation": [],
+  "descriptionFileName": "zaalreservatie-description.md",
+  "specificationDocuments": [
+    {
+      "name": "Applicatieprofiel Zaalreservatie",
+      "resourceReference": "https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/"
+    }
+  ],
+  "documentation": 
+  [
+   {
+      "name": "Vocabularium Zaalreservatie",
+      "resourceReference": "https://data.vlaanderen.be/ns/zaalreservatie/"
+    }
+  ],
   "charter": {},
   "reports": [],
   "presentations": [],
@@ -21,5 +32,5 @@
   "dateOfAcknowledgementBySteeringCommittee": "TBD",
   "datePublicReviewStart": "TBD",
   "datePublicReviewEnd": "TBD",
-  "endOfPublicationDate": ""
+  "endOfPublicationDate": "TBD"
 }
