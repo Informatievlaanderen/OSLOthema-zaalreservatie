@@ -1,0 +1,227 @@
+[
+  {
+    "@id": "_:infrastructuurreservatiedienst001" ,
+    "@type": "Infastructuurreservatiedienst" ,
+    "alternatieveNaam": {
+      "@value": "Zaalreservatie als publieke dienstverlening" ,
+      "@language": "nl"
+    } ,
+    "beschrijving": "Met onze zaalreservatiedienst kunt u eenvoudig en snel een geschikte ruimte boeken binnen de gemeente Mortsel." ,
+    "contactinfo": {
+      "@type": "Contactinfo" ,
+      "email": "stad@mortsel.be" ,
+      "telefoonnummer": "0476 845 627"
+    } ,
+    "naam": {
+      "@value": "Zaalreservatie" ,
+      "@language": "nl"
+    } ,
+    "ruimtelijkeDekking": {
+      "@type": "Plaats" ,
+      "geometrie": {
+        "gml": {
+          "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral" ,
+          "@value": "<gml><Point><coordinates>4.4517,51.1652</coordinates></Point></gml>"
+        } ,
+        "wkt": {
+          "@type": "http://www.opengis.net/ont/geosparql#wktLiteral" ,
+          "@value": "POINT(4.4517 51.1652)"
+        } ,
+        "plaatsnaam": {
+          "@value": "Gemeente Mortsel" ,
+          "@language": "nl"
+        }
+      }
+    } ,
+    "status": "http://example.com/code/Aanvraag" ,
+    "taal": "http://example.com/code/Nederlands" ,
+    "trefwoord": [
+      "zaalreservatie" ,
+      "boeken van een zaal" ,
+      "zaal" ,
+      "zaalverhuur"
+    ] ,
+    "type": "http://example.com/code/ReservatieVanEenZaal" ,
+    "heeftVerantwoordelijke": "_:GemeenteMortsel" ,
+    "produceert": {
+      "@type": "Infrastructuurreservatie" ,
+      "gereserveerdDoor": {
+        "@type": "Agent" ,
+        "@id": "_:AlexanderPotlood"
+      } ,
+      "gereserveerdVoor": {
+        "@type": "Activiteit" ,
+        "@id": "_:Conferentie001"
+      } ,
+      "periode": {
+        "@type": "Periode" ,
+        "begin": "2025-04-22T10:00:00" ,
+        "einde": "2025-04-22T14:00:00"
+      } ,
+      "buffer": [
+        {
+          "@type": "Periode" ,
+          "begin": "2025-04-22T09:00:00" ,
+          "einde": "2025-04-22T10:00:00"
+        } ,
+        {
+          "@type": "Periode" ,
+          "begin": "2025-04-22T14:00:00" ,
+          "einde": "2025-04-22T17:00:00"
+        }
+      ] ,
+      "infrastructuur": {
+        "@type": [
+          "Infrastructuur" ,
+          "Binnenruimte"
+        ] ,
+        "bereikbaarheid": {
+          "@type": "Bereikbaarheid" ,
+          "laatsteOpenbaarVervoer": "2025-04-22T23:30:00" ,
+          "mobiscore": 8 ,
+          "parkeerplaats": {
+            "@type": "KwantitatieveWaarde" ,
+            "waarde": 150 ,
+            "eenheid": "parkeerplaatsen"
+          }
+        } ,
+        "beschikbaarheid": {
+          "@type": "Beschikbaarheid" ,
+          "gebruiker": "http://example.com/code/VZW" ,
+          "periode": {
+            "dagVanDeWeek": "http://schema.org/Tuesday" ,
+            "geldigTot": "2025-12-31T23:59:59" ,
+            "geldigVan": "2025-01-01T00:00:00" ,
+            "open": "09:00" ,
+            "gesloten": "17:00"
+          }
+        } ,
+        "beschrijving": {
+          "@type": "Document" ,
+          "@id": "http://example.com/drive/Document.pdf"
+        } ,
+        "capaciteit": {
+          "@type": "Capaciteit" ,
+          "beschrijving": "In deze zaal passen 24 mensen in U-vorm zittend." ,
+          "eenheid": "personen" ,
+          "type": "http://example.com/code/bezettingZittend" ,
+          "waarde": 24
+        } ,
+        "contactpersoon": {
+          "@type": "Agent" ,
+          "@id": "_:/JanVanHecke"
+        } ,
+        "dimensie": [
+          {
+            "@type": "Dimensie" ,
+            "type": "http://example.com/code/breedte" ,
+            "standaardEenheid": "https://qudt.org/vocab/unit/M" ,
+            "waarde": "15"
+          } ,
+          {
+            "@type": "Dimensie" ,
+            "type": "http://example.com/code/lengte" ,
+            "standaardEenheid": "https://qudt.org/vocab/unit/M" ,
+            "waarde": "20"
+          }
+        ] ,
+        "eigenaar": {
+          "@type": "Eigenaarschap" ,
+          "eigenaar": "_:GemeenteMortsel" ,
+          "type": "http://example.com/code/huurder"
+        } ,
+        "faciliteit": {
+          "@type": "Faciliteit" ,
+          "beschrijving": {
+            "@value": "Een ruime zaal voorzien van alle moderne audiovisuele apparatuur." ,
+            "@language": "nl"
+          } ,
+          "document": {
+            "@type": "Document" ,
+            "@id": "http://example.com/drive/zaalbeschrijving.pdf"
+          } ,
+          "gebruiker": "voorstellingsgericht" ,
+          "type": "http://example.com/code/projectieEnVideoApparatuur"
+        } ,
+        "gebruik": {
+          "activiteit": {
+            "@type": "Activiteit" ,
+            "@id": "_:Conferentie001"
+          } ,
+          "exclusiviteit": "http://example.com/code/exclusief" ,
+          "gebruiker": "_:AlexanderPotloot" ,
+          "periode": {
+            "@type": "Periode" ,
+            "begin": "2025-04-22T10:00:00" ,
+            "einde": "2025-04-22T14:00:00"
+          } ,
+          "voorwaarde": {
+            "@type": "Criterion" ,
+            "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description": "agent mag geen commerciële organisatie zijn"
+          }
+        } ,
+        "licentie": {
+          "periode": {
+            "@type": "Periode" ,
+            "begin": "2025-04-22T10:00:00" ,
+            "einde": "2025-04-22T14:00:00"
+          } ,
+          "type": "http://example.come/code/unisono-media"
+        } ,
+        "locatie": {
+          "@type": "Locatie",
+          "adres": {
+            "@type": "Adresvoorstelling",
+            "TODO CHECK": "Kerkstraat 18, Mortsel, 1ste verdiep"
+          }
+        },
+        "naam": {
+          "@value": "ConscienceZaal",
+          "@language": "nl"
+        },
+        "openstelling": "http://example.com/code/nietPubliek" ,
+        "openingsuren": {
+          "dagVanDeWeek": "http://schema.org/Tuesday" ,
+          "geldigTot": "2025-12-31T23:59:59" ,
+          "geldigVan": "2025-01-01T00:00:00" ,
+          "open": "09:00:00" ,
+          "gesloten": "17:00:00"
+        } ,
+        "toegankelijkheid": {
+          "niveau": "http://example.com/code/hoog" ,
+          "onderdeel": "http://example.com/code/lift"
+        }
+      }
+    }
+  } ,
+  {
+    "@type": "PubliekeOrganisatie" ,
+    "@id": "_:GemeenteMortsel" ,
+    "contactinfo": {
+      "@type": "Contactinfo" ,
+      "email": "stad@mortsel.be"
+    } ,
+    "voorkeursnaam": {
+      "@value": "Stad Mortsel" ,
+      "@language": "nl"
+    } ,
+    "werkingsgebied": {
+      "@type": "Plaats" ,
+      "geometrie": {
+        "gml": {
+          "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral" ,
+          "@value": "<gml><Point><coordinates>4.4517,51.1652</coordinates></Point></gml>"
+        } ,
+        "wkt": {
+          "@type": "http://www.opengis.net/ont/geosparql#wktLiteral" ,
+          "@value": "POINT(4.4517 51.1652)"
+        } ,
+        "plaatsnaam": {
+          "@value": "Centrum Mortsel" ,
+          "@language": "nl"
+        }
+      }
+    }
+  }
+]
+
