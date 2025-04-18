@@ -172,7 +172,20 @@
           "@type": "Locatie",
           "adres": {
             "@type": "Adresvoorstelling",
-            "TODO CHECK": "Kerkstraat 18, Mortsel, 1ste verdiep"
+            "straatnaam": {
+              "@value":"Kerkstraat",
+              "@language": "nl"
+            },
+            "huisnummer": "18",
+            "postcode": "2640",
+            "gemeentenaam": {
+              "@value":"Mortsel",
+              "@language": "nl"
+            },
+            "adresgebied" : {
+              "@value":"Centrum",
+              "@language": "nl"
+            }
           }
         },
         "naam": {
