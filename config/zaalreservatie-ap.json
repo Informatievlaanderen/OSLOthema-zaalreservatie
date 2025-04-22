@@ -1,6 +1,6 @@
 [
 {
-  "name": "mijn-applicatieprofiel",
+  "name": "zaalreservatie-ap",
   "type": "ap",
   "eap": "OSLO-zaalreservatie.eap",
   "diagram": "OSLO-zaalreservatie_AP",
