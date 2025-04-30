@@ -1,10 +1,11 @@
 [
   {
-    "name": "mijn-vocabularium",
+    "name": "zaalreservatie",
     "type": "voc",
     "eap": "MijnVocabularium-VOC.eap",
     "diagram": "OSLO-MijnVocabularium",
     "template": "mijn-vocabularium-voc.j2",
+    "site": "site-skeleton/mijn-applicatieprofiel-ap",
     "title": "Mijn Vocabularium",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "publication-date": "2020-01-31",
