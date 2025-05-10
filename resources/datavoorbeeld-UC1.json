@@ -1,0 +1,35 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Reservation",
+  "reservationId": "https://example.com/reservation/123456",
+  "reservationFor": {
+    "@type": "Event",
+    "name": "Huwelijksreceptie van Filip van Damme",
+    "location": {
+      "@type": "Place",
+      "name": "Trouwzaal",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Laan van de Recepties 1",
+        "addressLocality": "Mortsel",
+        "postalCode": "2640",
+        "addressCountry": "BE"
+      }
+    },
+    "startDate": "2025-07-17T14:00:00+01:00",
+    "endDate": "2025-07-17T18:00:00+01:00"
+  },
+  "underName": {
+    "@type": "Person",
+    "name": "Filip van Damme",
+    "email": "filip.van.damme@example.com"
+  },
+  "reservationStatus": "http://schema.org/ReservationConfirmed",
+  "bookingTime": "2023-10-18T09:45:00+01:00",
+  "provider": {
+    "@type": "Organization",
+    "name": "Gemeente Mortsel",
+    "email": "reservaties@mortsel.be"
+  },
+  "confirmationNumber": "RES123456789"
+}
