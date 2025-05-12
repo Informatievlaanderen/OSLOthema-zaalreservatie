@@ -2,7 +2,7 @@
 {
   "name": "zaalreservatie",
   "type": "ap",
-  "eap": "OSLO-zaalreservatie.eap",
+  "eap": "OSLO-Zaalreservatie.eap",
   "diagram": "OSLO-Zaalreservatie_AP",
   "template": "zaalreservatie-ap.j2", 
   "title": "Applicatieprofiel Zaalreservatie",
