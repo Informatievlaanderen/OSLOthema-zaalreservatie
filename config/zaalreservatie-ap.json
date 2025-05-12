@@ -3,7 +3,7 @@
   "name": "zaalreservatie",
   "type": "ap",
   "eap": "OSLO-zaalreservatie.eap",
-  "diagram": "OSLO-zaalreservatie_AP",
+  "diagram": "OSLO-Zaalreservatie_AP",
   "template": "zaalreservatie-ap.j2", 
   "title": "Applicatieprofiel Zaalreservatie",
   "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
