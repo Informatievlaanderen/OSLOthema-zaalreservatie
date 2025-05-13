@@ -2,9 +2,9 @@
   {
     "name": "zaalreservatie",
     "type": "voc",
-    "eap": "MijnVocabularium-VOC.eap",
-    "diagram": "OSLO-MijnVocabularium",
-    "template": "mijn-vocabularium-voc.j2",
+    "eap": "OSLO-Zaalreservatie.eap",
+    "diagram": "OSLO-Zaalreservatie",
+    "template": "zaalreservatie-voc.j2",
     "site": "site-skeleton/mijn-applicatieprofiel-ap",
     "title": "Mijn Vocabularium",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
