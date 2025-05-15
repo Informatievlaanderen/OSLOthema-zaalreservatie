@@ -1,0 +1,39 @@
+{
+  "@type": "Infrastructuurreservatie",
+  "gereserveerdDoor": {
+    "@type": "Agent",
+    "@id": "_:Kristof"
+  },
+  "gereserveerdVoor": {
+    "@type": "Activiteit",
+    "@value": "Buurtvergadering"
+  },
+  "infrastructuur": {
+    "dimensie": [
+      {
+        "@type": "Dimensie",
+        "type": "http://example.com/code/breedte",
+        "waarde": "15"
+      },
+      {
+        "@type": "Dimensie",
+        "type": "http://example.com/code/lengte",
+        "waarde": "20"
+      }
+    ],
+    "openingsuren": {
+      "@type": "OpeningHoursSpecification",
+      "dagVanDeWeek": "http://schema.org/Tuesday",
+      "open": "09:00:00",
+      "gesloten": "17:00:00"
+    },
+    "toegankelijkheid": {
+      "niveau": "http://example.com/code/hoog"
+    }
+  },
+  "status": {
+    "@type": "Infrastructuurreservatiestatus",
+    "type": "http://example.com/status/geannuleerd",
+    "datum": "2025-09-01"
+  }
+}
