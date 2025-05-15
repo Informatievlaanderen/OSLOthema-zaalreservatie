@@ -1,0 +1,24 @@
+{
+  "@type": "Infrastructuurreservatie",
+  "gereserveerdDoor": {
+    "@type": "Agent",
+    "@id": "_:Filip"
+  },
+  "gereserveerdVoor": {
+    "@type": "Activiteit",
+    "@value": "Huwelijksreceptie"
+  },
+  "periode": {
+    "@type": "Periode",
+    "begin": "2025-07-17T14:00:00",
+    "einde": "2025-07-17T18:00:00"
+  },
+  "status": {
+    "@type": "Infrastructuurreservatiestatus",
+    "type": "http://example.com/status/aanvraag"
+  },
+  "organisatie": {
+    "@type": "PubliekeOrganisatie",
+    "@id": "_:GemeenteMortsel"
+  }
+}
