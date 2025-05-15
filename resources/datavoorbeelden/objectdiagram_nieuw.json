@@ -1,0 +1,448 @@
+[
+  {
+    "@id": "_:infrastructuurreservatiedienst001",
+    "@type": "Infastructuurreservatiedienst",
+    "alternatieveNaam": {
+      "@value": "Zaalreservatie als publieke dienstverlening",
+      "@language": "nl"
+    },
+    "beschrijving": "Met onze zaalreservatiedienst kunt u eenvoudig en snel een geschikte ruimte boeken binnen de gemeente Mortsel.",
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "aanschrijfvorm": {
+        "@value": "De heer",
+        "@language": "nl"
+      },
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "administratieve_eenheid_1": {
+          "@value": "Vlaanderen",
+          "@language": "nl"
+        },
+        "administratieve_eenheid_2": {
+          "@value": "Provincie Antwerpen",
+          "@language": "nl"
+        },
+        "adresgebied": {
+          "@value": "Centrum",
+          "@language": "nl"
+        },
+        "busnummer": "5",
+        "gemeentenaam": {
+          "@value": "Mortsel",
+          "@language": "nl"
+        },
+        "huisnummer": "18",
+        "land": {
+          "@value": "België",
+          "@language": "nl"
+        },
+        "locatieaanduiding": "Op de hoek met de Marktstraat",
+        "locatienaam": {
+          "@value": "Gemeentehuis",
+          "@language": "nl"
+        },
+        "postbus": "101",
+        "postcode": "2640",
+        "postnaam": {
+          "@value": "Mortsel",
+          "@language": "nl"
+        },
+        "straatnaam": {
+          "@value": "Kerkstraat",
+          "@language": "nl"
+        },
+        "volledig_adres": {
+          "@value": "Kerkstraat 18, bus 5, 2640 Mortsel, België",
+          "@language": "nl"
+        }
+      },
+      "beschikbaarheid": {
+        "@type": "OpeningHoursSpecification",
+        "dagVanDeWeek": "http://schema.org/Monday",
+        "geldigTot": "2025-12-31T23:59:59",
+        "geldigVan": "2025-01-01T00:00:00",
+        "gesloten": "17:00:00",
+        "open": "09:00:00"
+      },
+      "contactnaam": "Jan Janssens",
+      "email": "info@mortsel.be",
+      "fax": "0123 456 789",
+      "openingsuren": "Maandag tot vrijdag van 09:00 tot 17:00",
+      "telefoon": "0471 234 567",
+      "website": "https://www.mortsel.be"
+    },
+    "naam": {
+      "@value": "Zaalreservatie",
+      "@language": "nl"
+    },
+    "ruimtelijkeDekking": {
+      "@type": "Plaats",
+      "geometrie": {
+        "gml": {
+          "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
+          "@value": "<gml><Point><coordinates>4.4517,51.1652</coordinates></Point></gml>"
+        },
+        "wkt": {
+          "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
+          "@value": "POINT(4.4517 51.1652)"
+        },
+        "plaatsnaam": {
+          "@value": "Gemeente Mortsel",
+          "@language": "nl"
+        }
+      }
+    },
+    "status": "http://example.com/code/Aanvraag",
+    "taal": "http://example.com/code/Nederlands",
+    "trefwoord": [
+      "zaalreservatie",
+      "boeken van een zaal",
+      "zaal",
+      "zaalverhuur"
+    ],
+    "type": "http://example.com/code/ReservatieVanEenZaal",
+    "heeftVerantwoordelijke": "_:GemeenteMortsel"
+  },
+  {
+    "@type": "Infrastructuurreservatie",
+    "gereserveerdDoor": {
+      "@type": "Agent",
+      "@id": "_:AlexanderPotlood"
+    },
+    "gereserveerdVoor": {
+      "@type": "Activiteit",
+      "@id": "_:Conferentie001"
+    },
+    "periode": {
+      "@type": "Periode",
+      "begin": "2025-04-22T10:00:00",
+      "einde": "2025-04-22T14:00:00"
+    },
+    "buffer": [
+      {
+        "@type": "Periode",
+        "begin": "2025-04-22T09:00:00",
+        "einde": "2025-04-22T10:00:00"
+      },
+      {
+        "@type": "Periode",
+        "begin": "2025-04-22T14:00:00",
+        "einde": "2025-04-22T17:00:00"
+      }
+    ],
+    "plaatsbeschrijving": {
+      "@type": "Plaatsbeschrijving",
+      "bijlage": {
+        "@type": "Document",
+        "@id": "http://example.com/drive/plaatsbeschrijving.pdf"
+      },
+      "tijdstip": "2025-04-01T12:00:00"
+    },
+    "status": {
+      "@type": "Infrastructuurreservatiestatus",
+      "tijdstip": "2025-03-15T08:00:00",
+      "type": "http://example.come/code/inBehandeling"
+    },
+    "infrastructuur": {
+      "@type": [
+        "Infrastructuur",
+        "Binnenruimte"
+      ],
+      "contactpersoon": {
+        "@type": "Agent",
+        "@id": "_:/JanVanHecke",
+        "contactinfo": {
+          "@type": "Contactinfo",
+          "aanschrijfvorm": {
+            "@value": "De heer",
+            "@language": "nl"
+          },
+          "adres": {
+            "@type": "Adresvoorstelling",
+            "administratieve_eenheid_1": {
+              "@value": "Vlaanderen",
+              "@language": "nl"
+            },
+            "administratieve_eenheid_2": {
+              "@value": "Provincie Antwerpen",
+              "@language": "nl"
+            },
+            "adresgebied": {
+              "@value": "Centrum",
+              "@language": "nl"
+            },
+            "busnummer": "2",
+            "gemeentenaam": {
+              "@value": "Mortsel",
+              "@language": "nl"
+            },
+            "huisnummer": "20",
+            "land": {
+              "@value": "België",
+              "@language": "nl"
+            },
+            "locatieaanduiding": "Vlakbij het park",
+            "locatienaam": {
+              "@value": "Zaalbeheerder Kantoor",
+              "@language": "nl"
+            },
+            "postbus": "200",
+            "postcode": "2640",
+            "postnaam": {
+              "@value": "Mortsel",
+              "@language": "nl"
+            },
+            "straatnaam": {
+              "@value": "Marktstraat",
+              "@language": "nl"
+            },
+            "volledig_adres": {
+              "@value": "Marktstraat 20, bus 2, 2640 Mortsel, België",
+              "@language": "nl"
+            }
+          },
+          "beschikbaarheid": {
+            "@type": "OpeningHoursSpecification",
+            "dagVanDeWeek": "http://schema.org/Wednesday",
+            "geldigTot": "2025-12-31T23:59:59",
+            "geldigVan": "2025-01-01T00:00:00",
+            "gesloten": "18:00:00",
+            "open": "07:00:00"
+          },
+          "contactnaam": "Jan van Hecke",
+          "email": "zaalwachter@mortsel.be",
+          "fax": "0111 222 333",
+          "openingsuren": "Woensdag tot en met zondag van 07:00 tot 18:00",
+          "telefoon": "0456 789 012",
+          "website": "https://www.mortselzaalbeheer.be"
+        }
+      },
+      "bereikbaarheid": {
+        "@type": "Bereikbaarheid",
+        "laatsteOpenbaarVervoer": "2025-04-22T23:30:00",
+        "mobiscore": 8,
+        "parkeercapaciteit": {
+          "@type": "Parkeercapaciteit",
+          "totalecapaciteit": 150,
+          "voertuigtype": {
+            "@type": "Voertuig",
+            "type": "http://example.com/code/wagen"
+          }
+        }
+      },
+      "beschikbaarheid": {
+        "@type": "Beschikbaarheid",
+        "gebruiker": "http://example.com/code/VZW",
+        "periode": {
+          "dagVanDeWeek": "http://schema.org/Tuesday",
+          "geldigTot": "2025-12-31T23:59:59",
+          "geldigVan": "2025-01-01T00:00:00",
+          "open": "09:00",
+          "gesloten": "17:00"
+        }
+      },
+      "beschrijving": {
+        "@type": "Document",
+        "@id": "http://example.com/drive/Document.pdf"
+      },
+      "capaciteit": {
+        "@type": "Capaciteit",
+        "beschrijving": "In deze zaal passen 24 mensen in U-vorm zittend.",
+        "eenheid": "personen",
+        "type": "http://example.com/code/bezettingZittend",
+        "waarde": 24
+      },
+      "dimensie": [
+        {
+          "@type": "Dimensie",
+          "type": "http://example.com/code/breedte",
+          "standaardEenheid": "https://qudt.org/vocab/unit/M",
+          "waarde": "15"
+        },
+        {
+          "@type": "Dimensie",
+          "type": "http://example.com/code/lengte",
+          "standaardEenheid": "https://qudt.org/vocab/unit/M",
+          "waarde": "20"
+        }
+      ],
+      "eigenaar": {
+        "@type": "Eigenaarschap",
+        "eigenaar": "_:GemeenteMortsel",
+        "type": "http://example.com/code/huurder"
+      },
+      "faciliteit": {
+        "@type": "Faciliteit",
+        "beschrijving": {
+          "@value": "Een ruime zaal voorzien van alle moderne audiovisuele apparatuur.",
+          "@language": "nl"
+        },
+        "document": {
+          "@type": "Document",
+          "@id": "http://example.com/drive/zaalbeschrijving.pdf"
+        },
+        "gebruiker": "voorstellingsgericht",
+        "type": "http://example.com/code/projectieEnVideoApparatuur"
+      },
+      "gebruik": {
+        "activiteit": {
+          "@type": "Activiteit",
+          "@id": "_:Conferentie001"
+        },
+        "exclusiviteit": "http://example.com/code/exclusief",
+        "gebruiker": "_:AlexanderPotloot",
+        "periode": {
+          "@type": "Periode",
+          "begin": "2025-04-22T10:00:00",
+          "einde": "2025-04-22T14:00:00"
+        },
+        "voorwaarde": {
+          "@type": "Criterion",
+          "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#description": "agent mag geen commerciële organisatie zijn"
+        }
+      },
+      "locatie": {
+        "@type": "Locatie",
+        "adres": {
+          "@type": "Adresvoorstelling",
+          "straatnaam": {
+            "@value": "Kerkstraat",
+            "@language": "nl"
+          },
+          "huisnummer": "18",
+          "postcode": "2640",
+          "gemeentenaam": {
+            "@value": "Mortsel",
+            "@language": "nl"
+          },
+          "adresgebied": {
+            "@value": "Centrum",
+            "@language": "nl"
+          }
+        }
+      },
+      "naam": {
+        "@value": "ConscienceZaal",
+        "@language": "nl"
+      },
+      "openstelling": {
+        "openstellingtype": "http://example.com/code/publiek"
+      },
+      "openingsuren": {
+        "@type": "OpeningHoursSpecification",
+        "dagVanDeWeek": "http://schema.org/Tuesday",
+        "geldigTot": "2025-12-31T23:59:59",
+        "geldigVan": "2025-01-01T00:00:00",
+        "open": "09:00:00",
+        "gesloten": "17:00:00"
+      },
+      "toegang": {
+        "@type": "Document",
+        "@id": "http://example.com/drive/toegang.pdf"
+      },
+      "type": {
+        "@type": "Infrastructuurtype",
+        "@value": "http://example.com/code/vergaderzaal"
+      },
+      "veiligheidsvereisten": {
+        "@type": "Document",
+        "@id": "http://example.com/drive/veiligheidsvereisten.pdf"
+      },
+      "toegankelijkheid": {
+        "niveau": "http://example.com/code/hoog",
+        "onderdeel": "http://example.com/code/lift"
+      }
+    }
+  },
+  {
+    "@type": "PubliekeOrganisatie",
+    "@id": "_:GemeenteMortsel",
+    "contactinfo": {
+      "@type": "Contactinfo",
+      "aanschrijfvorm": {
+        "@value": "Mevrouw",
+        "@language": "nl"
+      },
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "administratieve_eenheid_1": {
+          "@value": "Vlaanderen",
+          "@language": "nl"
+        },
+        "administratieve_eenheid_2": {
+          "@value": "Provincie Antwerpen",
+          "@language": "nl"
+        },
+        "adresgebied": {
+          "@value": "Centrum",
+          "@language": "nl"
+        },
+        "busnummer": "6",
+        "gemeentenaam": {
+          "@value": "Mortsel",
+          "@language": "nl"
+        },
+        "huisnummer": "18",
+        "land": {
+          "@value": "België",
+          "@language": "nl"
+        },
+        "locatieaanduiding": "Naast het postkantoor",
+        "locatienaam": {
+          "@value": "Stad Mortsel",
+          "@language": "nl"
+        },
+        "postbus": "102",
+        "postcode": "2640",
+        "postnaam": {
+          "@value": "Mortsel",
+          "@language": "nl"
+        },
+        "straatnaam": {
+          "@value": "Kerkstraat",
+          "@language": "nl"
+        },
+        "volledig_adres": {
+          "@value": "Kerkstraat 18, bus 6, 2640 Mortsel, België",
+          "@language": "nl"
+        }
+      },
+      "beschikbaarheid": {
+        "@type": "OpeningHoursSpecification",
+        "dagVanDeWeek": "http://schema.org/Monday",
+        "geldigTot": "2025-12-31T23:59:59",
+        "geldigVan": "2025-01-01T00:00:00",
+        "gesloten": "16:30:00",
+        "open": "08:30:00"
+      },
+      "contactnaam": "Marie Peeters",
+      "email": "contact@mortsel.be",
+      "fax": "0987 654 321",
+      "openingsuren": "Maandag tot zaterdag van 08:30 tot 16:30",
+      "telefoon": "0484 765 432",
+      "website": "https://www.mortsel.be"
+    },
+    "voorkeursnaam": {
+      "@value": "Stad Mortsel",
+      "@language": "nl"
+    },
+    "werkingsgebied": {
+      "@type": "Plaats",
+      "geometrie": {
+        "gml": {
+          "@type": "http://www.opengis.net/ont/geosparql#gmlLiteral",
+          "@value": "<gml><Point><coordinates>4.4517,51.1652</coordinates></Point></gml>"
+        },
+        "wkt": {
+          "@type": "http://www.opengis.net/ont/geosparql#wktLiteral",
+          "@value": "POINT(4.4517 51.1652)"
+        },
+        "plaatsnaam": {
+          "@value": "Centrum Mortsel",
+          "@language": "nl"
+        }
+      }
+    }
+  }
+]
