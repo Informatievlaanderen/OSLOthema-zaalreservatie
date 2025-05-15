@@ -1,0 +1,49 @@
+{
+  "@type": "Infrastructuurreservatie",
+  "gereserveerdDoor": {
+    "@type": "Agent",
+    "@id": "_:SportclubCoach"
+  },
+  "gereserveerdVoor": {
+    "@type": "Activiteit",
+    "@value": "Teamsport"
+  },
+  "infrastructuur": {
+    "beschrijving": {
+      "@type": "Document",
+      "@id": "http://example.com/drive/sportzaalbeschrijving.pdf"
+    },
+    "faciliteit": [
+      {
+        "@type": "Faciliteit",
+        "beschrijving": {
+          "@value": "Kleedkamers beschikbaar voor beide geslachten.",
+          "@language": "nl"
+        },
+        "document": {
+          "@type": "Document",
+          "@id": "http://example.com/drive/kleedkamers.pdf"
+        },
+        "gebruiker": "publieksgericht",
+        "type": "http://example.com/faciliteit/kleedkamers"
+      },
+      {
+        "@type": "Faciliteit",
+        "beschrijving": {
+          "@value": "Opslagruimte voor sportmateriaal.",
+          "@language": "nl"
+        },
+        "document": {
+          "@type": "Document",
+          "@id": "http://example.com/drive/opslagruimte.pdf"
+        },
+        "gebruiker": "publieksgericht",
+        "type": "http://example.com/faciliteit/opslagruimte"
+      }
+    ]
+  },
+  "organisatie": {
+    "@type": "PubliekeOrganisatie",
+    "@id": "_:StadLeuven"
+  }
+}
