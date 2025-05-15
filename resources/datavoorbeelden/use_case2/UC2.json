@@ -1,0 +1,25 @@
+{
+  "@type": "Infrastructuurreservatie",
+  "gereserveerdDoor": {
+    "@type": "Agent",
+    "@id": "_:Vereniging"
+  },
+  "gereserveerdVoor": {
+    "@type": "Activiteit",
+    "@value": "Openbare Expositie"
+  },
+  "infrastructuur": {
+    "veiligheidsvereisten": {
+      "@type": "Document",
+      "@id": "http://example.com/drive/veiligheidsvereisten.pdf"
+    },
+    "toegang": {
+      "@type": "Document",
+      "@id": "http://example.com/drive/toegang.pdf"
+    }
+  },
+  "voorwaarden": {
+    "@type": "Document",
+    "@id": "http://example.com/drive/annuleringsvoorwaarden.pdf"
+  }
+}
