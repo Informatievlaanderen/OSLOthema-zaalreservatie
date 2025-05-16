@@ -1,6 +1,4 @@
 # Use case 3
 
-Kristof wil een buurtvergadering organiseren en gebruikt het systeem om een toegankelijke zaal te reserveren.
-Hij wil graag informatie over de kenmerken van de zaal,
-zoals de grootte en openingsuren, en of de zaal geschikt is voor een buurtvergadering. 
-Twee weken voor de vergadering annuleert hij zijn boeking, wat binnen de periode valt waarin annuleren kosteloos is.
+Een gemeenteambtenaar ontvangt de aanvraag tot zaalreservatie en zal de informatie checken en controleren op compatibiliteit met andere activiteiten. 
+De ambtenaar zal de aanvraag goedkeuren en een email sturen met de nodige gegevens (referentienummer aanvraag, beschrijving, datum, status van de zaalreservatie).​
