@@ -6,16 +6,62 @@
   },
   "gereserveerdVoor": {
     "@type": "Activiteit",
-    "@value": "Huwelijksreceptie"
+    "@id": "http://example.com/activiteit/huwelijksreceptie"
   },
   "periode": {
     "@type": "Periode",
     "begin": "2025-07-17T14:00:00",
     "einde": "2025-07-17T18:00:00"
   },
-  "status": {
-    "@type": "Infrastructuurreservatiestatus",
-    "type": "http://example.com/status/aanvraag"
+  "status": [
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/aangevraagd",
+      "tijdstip": "2025-02-24T10:00:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/inBehandeling",
+      "tijdstip": "2025-02-25T09:00:00"
+    }
+  ],
+  "infrastructuur": {
+    "locatie": {
+      "@type": "Locatie",
+      "adres": {
+        "@type": "Adresvoorstelling",
+        "straatnaam": {
+          "@value": "Kerkstraat",
+          "@language": "nl"
+        },
+        "huisnummer": "1, 3e verdiep",
+        "gemeentenaam": {
+          "@value": "Mortsel",
+          "@language": "nl"
+        },
+        "postcode": "2640",
+        "adresgebied": {
+          "@value": "Centrum",
+          "@language": "nl"
+        },
+        "land": {
+          "@value": "België",
+          "@language": "nl"
+        },
+        "volledig_adres": {
+          "@value": "Kerkstraat 1, 3e verdiep, 2640 Mortsel, België",
+          "@language": "nl"
+        }
+      }
+    },
+    "capaciteit": {
+      "@type": "Capaciteit",
+      "beschrijving": "De zaal heeft een maximale capaciteit van 50 personen staand.",
+      "eenheid": "personen",
+      "standaardEenheid": "https://qudt.org/vocab/unit/PERSON",
+      "type": "http://example.com/capaciteit/staand",
+      "waarde": 50
+    }
   },
   "organisatie": {
     "@type": "PubliekeOrganisatie",
