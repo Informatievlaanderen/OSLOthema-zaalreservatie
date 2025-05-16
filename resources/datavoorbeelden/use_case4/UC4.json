@@ -6,9 +6,38 @@
   },
   "gereserveerdVoor": {
     "@type": "Activiteit",
-    "@value": "Teamsport"
+    "activiteittype": "http://example.com/activiteitstype/teamsport",
+    "@id": "http://example.com/activiteit/teamsport"
   },
+  "periode": {
+    "@type": "Periode",
+    "dagVanDeWeek": "http://schema.org/Tuesday",
+    "open": "18:00:00",
+    "gesloten": "20:00:00"
+  },
+  "status": [
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/aangevraagd",
+      "tijdstip": "2025-02-01T09:00:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/inBehandeling",
+      "tijdstip": "2025-02-01T12:00:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/goedgekeurd",
+      "tijdstip": "2025-02-02T10:00:00"
+    }
+  ],
   "infrastructuur": {
+    "@type": [
+      "Infrastructuur",
+      "Binnenruimte"
+    ],
+    "@id": "http://example.com/leuven/sportzaal",
     "beschrijving": {
       "@type": "Document",
       "@id": "http://example.com/drive/sportzaalbeschrijving.pdf"
@@ -24,8 +53,9 @@
           "@type": "Document",
           "@id": "http://example.com/drive/kleedkamers.pdf"
         },
-        "gebruiker": "publieksgericht",
-        "type": "http://example.com/faciliteit/kleedkamers"
+        "gebruiker": "http://example.com/gebruiktype/publieksgericht",
+        "type": "http://example.com/faciliteit/kleedkamers",
+        "faciliteittype": "http://example.com/faciliteittype/kleedkamer"
       },
       {
         "@type": "Faciliteit",
@@ -37,13 +67,32 @@
           "@type": "Document",
           "@id": "http://example.com/drive/opslagruimte.pdf"
         },
-        "gebruiker": "publieksgericht",
-        "type": "http://example.com/faciliteit/opslagruimte"
+        "gebruiker": "http://example.com/gebruiktype/publieksgericht",
+        "type": "http://example.com/faciliteit/opslagruimte",
+        "faciliteittype": "http://example.com/faciliteittype/opslagruimte"
       }
-    ]
+    ],
+    "superinfrastructuur": {
+      "@type": "Infrastructuur",
+      "@id": "http://example.com/leuven/sporthal",
+      "subinfrastructuren": [
+        {
+          "@type": "Infrastructuur",
+          "@id": "http://example.com/leuven/voetbalveld"
+        },
+        {
+          "@type": "Infrastructuur",
+          "@id": "http://example.com/leuven/basketbalveld"
+        }
+      ]
+    }
   },
-  "organisatie": {
-    "@type": "PubliekeOrganisatie",
-    "@id": "_:StadLeuven"
+  "infrastructuurreservatiedienst": {
+    "@type": "Infrastructuurreservatiedienst",
+    "@id": "http://example.com/service/reservatiedienstStadLeuven",
+    "heeftVerantwoordelijke": {
+      "@type": "PubliekeOrganisatie",
+      "@id": "_:StadLeuven"
+    }
   }
 }
