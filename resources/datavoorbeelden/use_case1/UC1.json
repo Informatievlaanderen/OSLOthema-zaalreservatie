@@ -6,7 +6,7 @@
   },
   "gereserveerdVoor": {
     "@type": "Activiteit",
-    "@id": "http://example.com/activiteit/huwelijksreceptie"
+    "type": "http://example.com/activiteitstype/huwelijksreceptie"
   },
   "periode": {
     "@type": "Periode",
@@ -22,10 +22,17 @@
     {
       "@type": "Infrastructuurreservatiestatus",
       "type": "http://example.com/status/inBehandeling",
-      "tijdstip": "2025-02-25T09:00:00"
+      "tijdstip": "2025-02-24T10:03:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/goedgekeurd",
+      "tijdstip": "2025-02-24T10:05:00"
     }
   ],
   "infrastructuur": {
+    "@type": ["Infrastructuur", "Binnenruimte"],
+    "@id": "http://example.com/mortsel/zaal1",
     "locatie": {
       "@type": "Locatie",
       "adres": {
@@ -63,8 +70,12 @@
       "waarde": 50
     }
   },
-  "organisatie": {
-    "@type": "PubliekeOrganisatie",
-    "@id": "_:GemeenteMortsel"
+  "infrastructuurreservatiedienst": {
+    "@type": "Infrastractuurreservatiedienst",
+    "@id": "http://example.com/service/reservatiedienstGemeenteMortsel",
+    "organisatie": {
+      "@type": "PubliekeOrganisatie",
+      "@id": "_:GemeenteMortsel"
+    }
   }
 }
