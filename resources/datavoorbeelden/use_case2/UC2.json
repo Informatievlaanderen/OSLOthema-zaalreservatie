@@ -1,0 +1,62 @@
+{
+  "@type": "Infrastructuurreservatie",
+  "gereserveerdDoor": {
+    "@type": "Agent",
+    "@id": "_:Vereniging"
+  },
+  "gereserveerdVoor": {
+    "@type": "Activiteit",
+    "@id": "http://example.com/activiteit/openbare-expositie"
+  },
+  "infrastructuur": {
+    "dimensie": [
+      {
+        "@type": "Dimensie",
+        "type": "http://example.com/code/breedte",
+        "standaardEenheid": "https://qudt.org/vocab/unit/M",
+        "waarde": "15"
+      },
+      {
+        "@type": "Dimensie",
+        "type": "http://example.com/code/lengte",
+        "standaardEenheid": "https://qudt.org/vocab/unit/M",
+        "waarde": "20"
+      }
+    ],
+    "bereikbaarheid": {
+      "@type": "Bereikbaarheid",
+      "laatsteOpenbaarVervoer": "2025-04-22T23:30:00",
+      "mobiscore": 8,
+      "parkeercapaciteit": {
+        "@type": "Parkeercapaciteit",
+        "totalecapaciteit": 150,
+        "voertuigtype": {
+          "@type": "Voertuig",
+          "type": "http://example.com/code/wagen"
+        }
+      }
+    },
+    "beschikbaarheid": {
+      "@type": "Beschikbaarheid",
+      "periode": {
+        "dagVanDeWeek": "http://schema.org/Wednesday",
+        "geldigVan": "2025-01-01T00:00:00",
+        "geldigTot": "2025-12-31T23:59:59",
+        "open": "09:00",
+        "gesloten": "17:00"
+      }
+    },
+    "veiligheidsvereisten": {
+      "@type": "Document",
+      "@id": "http://example.com/drive/veiligheidsvereisten.pdf"
+    },
+    "toegang": {
+      "@type": "Document",
+      "@id": "http://example.com/drive/toegang.pdf"
+    },
+    "annuleringsvoorwaarden": {
+      "@value": "Annulering is kosteloos tot twee weken voor de reserveringsdatum.",
+      "@language": "nl"
+    }
+  }
+}

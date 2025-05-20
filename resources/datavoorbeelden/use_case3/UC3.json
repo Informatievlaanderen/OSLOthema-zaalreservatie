@@ -1,0 +1,70 @@
+{
+  "@type": "Infrastructuurreservatie",
+  "gereserveerdDoor": {
+    "@type": "Agent",
+    "@id": "_:Kristof"
+  },
+  "gereserveerdVoor": {
+    "@type": "Activiteit",
+    "activiteittype": "http://example.com/activiteitstype/vergadering",
+    "type": "http://example.com/activiteit/buurtvergadering"
+  },
+  "infrastructuur": {
+    "@type": [
+      "Infrastructuur",
+      "Binnenruimte"
+    ],
+    "dimensie": [
+      {
+        "@type": "Dimensie",
+        "type": "http://example.com/code/breedte",
+        "waarde": "15"
+      },
+      {
+        "@type": "Dimensie",
+        "type": "http://example.com/code/lengte",
+        "waarde": "20"
+      }
+    ],
+    "openingsuren": {
+      "@type": "Openingsurenspecificatie",
+      "dagVanDeWeek": "http://schema.org/Tuesday",
+      "open": "09:00:00",
+      "gesloten": "17:00:00"
+    },
+    "toegankelijkheid": {
+      "niveau": "http://example.com/code/hoog"
+    },
+    "annuleringsvoorwaarden": {
+      "@value": "Annulering is kosteloos tot twee weken voor de reserveringsdatum.",
+      "@language": "nl"
+    },
+    "activiteit": {
+      "@type": "Activiteit",
+      "activiteittype": "http://example.com/activiteitstype/vergadering",
+      "type": "http://example.com/activiteit/buurtvergadering"
+    }
+  },
+  "status": [
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/aangevraagd",
+      "tijdstip": "2025-08-01T09:00:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/inBehandeling",
+      "tijdstip": "2025-08-01T12:00:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/goedgekeurd",
+      "tijdstip": "2025-08-02T10:00:00"
+    },
+    {
+      "@type": "Infrastructuurreservatiestatus",
+      "type": "http://example.com/status/geannuleerd",
+      "tijdstip": "2025-09-01T11:00:00"
+    }
+  ]
+}
