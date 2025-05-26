@@ -3,7 +3,7 @@
     "name": "zaalreservatie",
     "type": "voc",
     "eap": "OSLO-Zaalreservatie.eap",
-    "diagram": "OSLO-Zaalreservatie",
+    "diagram": "OSLO-Zaalreservatie_AP",
     "template": "zaalreservatie-voc.j2",
     "site": "site-skeleton/mijn-applicatieprofiel-ap",
     "title": "Mijn Vocabularium",
