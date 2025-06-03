@@ -3,15 +3,14 @@
     "name": "zaalreservatie",
     "type": "voc",
     "eap": "OSLO-Zaalreservatie.eap",
-    "diagram": "OSLO-Zaalreservatie_AP",
+    "diagram": "OSLO-Zaalreservatie_VOC",
     "template": "zaalreservatie-voc.j2",
-    "site": "site-skeleton/mijn-applicatieprofiel-ap",
-    "title": "Mijn Vocabularium",
+    "title": "Vocabularium Zaalreservatie",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
     "publication-date": "2025-04-23",
     "license": "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0",
     "contributors-file": "stakeholders.csv",
-    "contributors-column": "Functie",
+    "contributors-column": "Rol",
     "feedbackurl": "https://github.com/Informatievlaanderen/OSLOthema-mijnThema/issues",
     "standaardregisterurl": "https://data.vlaanderen.be/standaarden/mijn-vocabularium-zaalreservatie/"
   }
