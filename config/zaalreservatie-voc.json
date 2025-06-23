@@ -3,7 +3,7 @@
     "name": "zaalreservatie",
     "type": "voc",
     "eap": "OSLO-Zaalreservatie.eap",
-    "diagram": "OSLO-Zaalreservatie_VOC",
+    "diagram": "OSLO-Zaalreservatie",
     "template": "zaalreservatie-voc.j2",
     "title": "Vocabularium Zaalreservatie",
     "publication-state": "https://data.vlaanderen.be/id/concept/StandaardStatus/OntwerpStandaard",
