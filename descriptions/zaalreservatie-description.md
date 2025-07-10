@@ -1,7 +1,11 @@
-Dit OSLO-traject richt zich op het gestructureerd uitwisselen van data in verband met zaalreservatie. Wat volgt zijn een aantal use cases die hieronder vallen: 
-<ul>
-  <li>Het reserveren van een zaal en hierbij noodzakelijke zaalinformatie krijgen zoals: locatie, afmetingen, capaciteit, bereikbaarheid, beschikbaarheid, openingsuren, type mogelijke activiteit, etc. </li>
-  <li>Het annuleren van een zaalreservatie.</li>
-  <li>Compatibiliteit controleren in verband met meerdere activiteiten die niet tegelijkertijd kunnen plaatsvinden.</li>
-</ul>
-Deze informatie is van groot belang voor ambtenaren die zaalreservaties opvolgen. 
+<p>Het OSLO-model voor Zaalreservaties biedt een gestandaardiseerd kader voor het beheer en de uitwisseling van gegevens met betrekking tot het reserveren van zalen en infrastructuur in Vlaanderen. Na vijf intensieve werkgroepen met betrokken stakeholders is een finaal model ontstaan dat de wensen en behoeften met betrekking tot zaalreservaties volledig ondersteunt. Dit model is specifiek ontworpen om de lokale besturen te faciliteren in hun publieke dienstverlening en zaalreservatiebeheer.</p>
+
+<p>De kern van dit profiel is de reservatie, die fungeert als centrale verbinding tussen publieke dienstverlening (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/dienstencataloog/" target="_blank">OSLO-Dienstencataloog</a>) en infrastructuur (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/cultuur-en-jeugd/infrastructuur/" target="_blank">OSLO-Cultuur-en Jeugdinfrastructuur</a>). Een reservatie wordt vastgelegd door een Agent (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/generiek-basis/" target="_blank">OSLO-Generiek</a>) voor een specifieke Activiteit (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/cultuurparticipatie/" target="_blank">OSLO-Cultuurparticipatie</a>), binnen een afgebakende periode en onder toevoeging van een bufferperiode en plaatsinformatie. Elke reservatie kent een status zoals aanvraag, in behandeling, of goedgekeurd, afhankelijk van de voortgang van de verwerking.</p>
+
+<p>Deze infrastructuurreservatie is een onderdeel van de publieke dienstverlening, met als verantwoordelijke een publieke organisatie (zie <a href="https://data.vlaanderen.be/doc/applicatieprofiel/organisatie-basis/" target="_blank">OSLO-Organisatie</a>). Deze organisatie beschikt over attributen zoals werkingsgebied, contactinformatie en voorkeursnaam, en fungeert als centrale beheerder van de infrastructuur.</p>
+
+<p>Infrastructuur kent verschillende type attributen. Er is één verplicht attribuut, namelijk de locatie, omdat elk stuk infrastructuur ten minste één locatie moet hebben. Andere attributen, zoals annuleringsvoorwaarden, bereikbaarheid, en toegankelijkheid, kunnen optioneel worden gedeeld en zijn niet altijd vereist.</p>
+
+<p>Bovendien zijn er elementen die niet altijd aanwezig hoeven te zijn, maar wel meerdere keren kunnen voorkomen. Dit omvat documenten die aan de infrastructuur zijn gekoppeld, evenals gegevens over capaciteit, contactpersoon, dimensie, faciliteiten, gebruik, naam, en veiligheidsvereisten.</p>
+
+<p>Een belangrijk kenmerk van infrastructuur is dat deze kan bestaan uit zowel Binnenruimtes als Buitenruimtes, zoals binnenzalen of terrassen. Deze flexibiliteit is cruciaal voor het ontwerpen van infrastructuur voor diverse soorten evenementen en activiteiten.</p>
