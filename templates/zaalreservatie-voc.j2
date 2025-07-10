@@ -1,8 +1,31 @@
 {% extends "voc2.j2" %}
 
 {% block summary %}
-<p> Dit vocabularium heeft als doel de informatie te standaardiseren in de context van zaalreservatie, gericht op het ontwikkelen van een gemeenschappelijk begrip van essentiële zaalreservatie-informatie. </p>
-{% endblock %}
+<p>Het vocabularium OSLO-Zaalreservatie definieert termen die specifiek zijn voor het domein van zaalreservaties, 
+met een focus op unieke klassen en eigenschappen die deze context ondersteunen. 
+Centraal staan de klassen <strong>Infrastructuurreservatie</strong>, <strong>Infrastructuurreservatiedienst</strong>, en <strong>Infrastructuurreservatiestatus</strong>, 
+die samen de basis vormen voor het beschrijven van de reservatieprocessen en de bijbehorende diensten.</p>
+
+<p>De <strong>Infrastructuurreservatie</strong> dienst biedt gedetailleerde beschrijvingen van de services en procedures die nodig zijn voor het beheren van dergelijke reservaties, 
+terwijl de <strong>Infrastructuurreservatiestatus</strong> wordt gebruikt om de voortgang van een reservatie te volgen, met termen zoals aanvraag, in behandeling en goedgekeurd.</p>
+
+<p>Om de specifieke locatie en omstandigheden van een reservatie vast te leggen, maakt het vocabularium gebruik van de klasse <strong>Plaatsbeschrijving</strong>. 
+Deze klasse biedt een uitgebreide beschrijving van de fysieke locatie die gereserveerd is, zoals de specifieke zaal of de eigenschappen van de ruimte.</p>
+
+<p>Het vocabularium bevat ook een unieke eigenschap, <em>Voertuigtype</em>,
+die het mogelijk maakt om specifieke eisen of beperkingen met betrekking tot vervoer en toegang in het kader van de reservatie op te nemen.</p>
+
+<p>Daarnaast zijn er eigenschappen zoals <strong>Annuleringsvoorwaarden</strong> en <strong>Bijlage</strong>
+die aanvullende context bieden voor de voorwaarden waaronder zaken als annuleringen kunnen plaatsvinden, en welke documenten erbij betrokken kunnen zijn.</p>
+
+<p>Unieke eigenschappen zoals <strong>Buffer</strong> en <strong>Gereserveerd voor</strong> helpen bij het specificeren van de voorbereidingstijd en de specifieke activiteiten waarvoor de reservatie is gemaakt.
+Dit schept duidelijkheid en conformeert de reservatie aan de bedoelde gebruikscontext.</p>
+
+<p>Met het vocabularium wordt een samenhangend framework geboden dat speciaal is inclusief van termen die
+binnen het OSLO-Zaalreservatie domein werden ontwikkeld en niet afhankelijk zijn van andere OSLO-trajecten.</p>
+
+<p>Een uitgebreide uitleg en toepassing van deze termen binnen de context van zaalreservaties is te vinden in 
+het <a href="https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/" target="_blank">OSLO-Zaalreservatie applicatieprofiel</a>.</p>{% endblock %}
 
 {% block status %}
 <p>(Verwijder dit blok om een geautomatiseerde standaardparagraaf te laten verschijnen.)</p>
