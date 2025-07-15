@@ -1,190 +1,307 @@
 {
-    "@context": [
-      "https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
-      "https://data.vlaanderen.be/context/persoon-basis.jsonld",
-      {
-        "XSD.DateTime": "http://www.w3.org/2001/XMLSchema#DateTime",
-        "XSD.Time": "http://www.w3.org/2001/XMLSchema#Time"
-      }
-    ],
-    "@graph": [
+  "@context": [
+    "https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
+    "https://data.vlaanderen.be/context/persoon-basis.jsonld",
+    {
+      "XSD.DateTime": "http://www.w3.org/2001/XMLSchema#DateTime",
+      "XSD.Time": "http://www.w3.org/2001/XMLSchema#Time"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "_:IRD001",
+      "@type": "Infrastructuurreservatiedienst",
+      "Infrastructuurreservatiedienst.infrastructuur": [
         {
-          "@id": "_:IRD001",
-          "@type": "Infrastructuurreservatiedienst",
-          "Infrastructuurreservatiedienst.infrastructuur": [
-            { "@id": "_:INF001" },
-            { "@id": "_:INF002" }
-          ],
-          "voorkeursnaam": { "@value": "Online reserveringssysteem Stad Leuven", "@language": "nl" },
-          "produceert": [
-            { "@id": "_:RES001" },
-            { "@id": "_:RES002" }
-          ]
+          "@id": "_:INF001"
         },
         {
-          "@id": "_:INF001",
-          "@type": "Binnenruimte",
-          "Infrastructuur.naam": { "@value": "Sportzaal A", "@language": "nl" },
-          "Infrastructuur.type": {
-"@id": "https://data.vlaanderen.be/id/concept/Binnenruimtetype/Sportzaal"
-          },
-          "capaciteit": {
-            "@type": "Capaciteit",
-            "waarde": { "@value": 100 },
-            "eenheid": { "@id": "https://example.com/concept/eenheid/Personen" }
-          },
-          "openingsuren": {
-            "@type": "Openingsurenspecificatie",
-            "geldigVan": { "@value": "2025-06-01T00:00:00Z", "@type": "XSD.DateTime" },
-            "geldigTot": { "@value": "2025-06-30T23:59:59Z", "@type": "XSD.DateTime" },
-            "open": { "@value": "12:00:00", "@type": "XSD.Time" },
-            "gesloten": { "@value": "22:00:00", "@type": "XSD.Time" }
-          },
-          "beschikbaarheid": {
-            "@type": "Beschikbaarheid",
-            "Beschikbaarheid.periode": {
-              "geldigVan": { "@value": "2025-06-01T00:00:00Z", "@type": "XSD.DateTime" },
-              "geldigTot": { "@value": "2025-06-30T23:59:59Z", "@type": "XSD.DateTime" }
-            },
-            "Beschikbaarheid.openingsuren": { "@value": "14:00:00-22:00:00" }
-          },
-          "faciliteit": [
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Kleedkamer Mannen",
-              "type": {
-"@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerMannen"
-              }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Kleedkamer Vrouwen",
-              "type": {
-"@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerVrouwen"
-              }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Basketballen",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/basketballen" }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Basketbalterrein",
-              "type": {
-"@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/basketbalterrein"
-              }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Opslagruimte",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/opslagruimte" }
-            }
-          ]
-        },
-       {
-          "@id": "_:INF001",
-          "@type": "Binnenruimte",
-          "Infrastructuur.naam": {
-            "@value": "Sportzaal B",
-            "@language": "nl"
-          },
-          "Infrastructuur.type": {
-"@id": "https://data.vlaanderen.be/id/concept/Binnenruimtetype/Sportzaal"
-          },
-          "capaciteit": {
-            "@type": "Capaciteit",
-            "waarde": { "@value": 20 },
-            "eenheid": { "@id": "http://example.org/concept/eenheid/Personen" }
-          },
-          "openingsuren": {
-            "@type": "Openingsurenspecificatie",
-            "geldigVan": { "@value": "2025-06-01T00:00:00Z", "@type": "XSD.DateTime" },
-            "geldigTot": { "@value": "2025-06-30T23:59:59Z", "@type": "XSD.DateTime" },
-            "open": { "@value": "12:00:00", "@type": "XSD.Time" },
-            "gesloten": { "@value": "22:00:00", "@type": "XSD.Time" }
-          },
-          "beschikbaarheid": {
-            "@type": "Beschikbaarheid",
-            "Beschikbaarheid.periode": {
-              "geldigVan": { "@value": "2025-06-01T00:00:00Z", "@type": "XSD.DateTime" },
-              "geldigTot": { "@value": "2025-06-30T23:59:59Z", "@type": "XSD.DateTime" }
-            },
-            "Beschikbaarheid.openingsuren": { "@value": "14:00:00-22:00:00" }
-          },
-          "faciliteit": [
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Kleedkamer Mannen",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerMannen" }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Kleedkamer Vrouwen",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerVrouwen" }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Klimrek",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/klimrek" }
-            }
-          ]
+          "@id": "_:INF002"
+        }
+      ],
+      "PubliekeOrganisatie.voorkeursnaam": {
+        "@value": "Online reserveringssysteem Stad Leuven",
+        "@language": "nl"
+      },
+      "Infrastructuurreservatiedienst.produceert": [
+        {
+          "@id": "_:RES001"
         },
         {
-          "@id": "_:RES001",
-           "@type": "Infrastructuurreservatie",
-          "Infrastructuurreservatie.infrastructuur": [ { "@id": "_:INF001" } ],
-          "Infrastructuurreservatie.status": [ {
-"@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/inBehandeling"
-          } ],
-          "Infrastructuurreservatie.periode": {
-            "@type": "Periode",
-            "van": {
-              "@type": "Moment",
-              "inXSDDateTime": { "@value": "2025-06-20T18:00:00Z", "@type": "XSD.DateTime" }
-            },
-            "tot": {
-              "@type": "Moment",
-              "inXSDDateTime": { "@value": "2025-06-20T22:00:00Z", "@type": "XSD.DateTime" }
+          "@id": "_:RES002"
+        }
+      ]
+    },
+    {
+      "@id": "_:INF001",
+      "@type": "Binnenruimte",
+      "Infrastructuur.naam": {
+        "@value": "Sportzaal A",
+        "@language": "nl"
+      },
+      "Infrastructuur.type": {
+        "@id": "https://data.vlaanderen.be/id/concept/Binnenruimtetype/Sportzaal"
+      },
+      "Infrastructuur.capaciteit": {
+        "@type": "Capaciteit",
+        "Capaciteit.waarde": {
+          "@value": 100
+        },
+        "Capaciteit.eenheid": {
+          "@id": "https://example.com/concept/eenheid/Personen"
+        }
+      },
+      "Infrastructuur.openingsuren": {
+        "@type": "Openingsurenspecificatie",
+        "Openingsurenspecificatie.geldigVan": {
+          "@value": "2025-06-01T00:00:00Z",
+          "@type": "XSD.DateTime"
+        },
+        "Openingsurenspecificatie.geldigTot": {
+          "@value": "2025-06-30T23:59:59Z",
+          "@type": "XSD.DateTime"
+        },
+        "Openingsurenspecificatie.open": {
+          "@value": "12:00:00",
+          "@type": "XSD.Time"
+        },
+        "Openingsurenspecificatie.gesloten": {
+          "@value": "22:00:00",
+          "@type": "XSD.Time"
+        }
+      },
+      "Infrastructuur.beschikbaarheid": {
+        "@type": "Beschikbaarheid",
+        "Beschikbaarheid.periode": {
+          "@type": "Periode",
+          "Periode.van": {
+            "@type": "Moment",
+            "Moment.inXSDDatumTijd": {
+              "@value": "2025-06-01T00:00:00Z",
+              "@type": "XSD.DateTime"
             }
           },
-          "gereserveerdVoor": {
-            "@type": "Activiteit",
-            "Activiteit.type": { "@id": "https://data.vlaanderen.be/id/concept/Activiteittype/basketbaltraining" }
-          },
-          "gereserveerdDoor": {
-            "@type": "Persoon",
-            "alternatieveNaam": { "@value": "Coach Sportclub Basketbalploeg", "@language": "nl" }
+          "Periode.tot": {
+            "@type": "Moment",
+            "Moment.inXSDDatumTijd": {
+              "@value": "2025-06-30T23:59:59Z",
+              "@type": "XSD.DateTime"
+            }
+          }
+        },
+        "Beschikbaarheid.openingsuren": {
+          "@value": "14:00:00-22:00:00"
+        }
+      },
+      "Infrastructuur.faciliteit": [
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Kleedkamer Mannen",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerMannen"
           }
         },
         {
-            "@id": "_:RES002",
-            "@type": "Infrastructuurreservatie",
-          "Infrastructuurreservatie.infrastructuur": [ { "@id": "_:INF002" } ],
-          "Infrastructuurreservatie.status": [ {
-"@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/bevestigd"
-            }],
-          "Infrastructuurreservatie.periode": {
-            "@type": "Periode",
-            "van": {
-              "@type": "Moment",
-              "inXSDDateTime": { "@value": "2025-06-20T18:00:00Z", "@type": "XSD.DateTime" }
-            },
-            "tot": {
-              "@type": "Moment",
-              "inXSDDateTime": { "@value": "2025-06-20T22:00:00Z", "@type": "XSD.DateTime" }
-            }
-          },
-          "gereserveerdVoor": {
-            "@type": "Activiteit",
-            "Activiteit.type": {
-"@id": "https://data.vlaanderen.be/id/concept/Activiteittype/gymnastiek"
-            }
-          },
-          "gereserveerdDoor": {
-            "@type": "Persoon",
-            "alternatieveNaam": { "@value": "Coach Gymnasten", "@language": "nl" }
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Kleedkamer Vrouwen",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerVrouwen"
+          }
+        },
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Basketballen",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/basketballen"
+          }
+        },
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Basketbalterrein",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/basketbalterrein"
+          }
+        },
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Opslagruimte",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/opslagruimte"
           }
         }
-    ]
+      ]
+    },
+    {
+      "@id": "_:INF001",
+      "@type": "Binnenruimte",
+      "Infrastructuur.naam": {
+        "@value": "Sportzaal B",
+        "@language": "nl"
+      },
+      "Infrastructuur.type": {
+        "@id": "https://data.vlaanderen.be/id/concept/Binnenruimtetype/Sportzaal"
+      },
+      "Infrastructuur.capaciteit": {
+        "@type": "Capaciteit",
+        "Capaciteit.waarde": {
+          "@value": 20
+        },
+        "Capaciteit.eenheid": {
+          "@id": "http://example.org/concept/eenheid/Personen"
+        }
+      },
+      "Infrastructuur.openingsuren": {
+        "@type": "Openingsurenspecificatie",
+        "Openingsurenspecificatie.geldigVan": {
+          "@value": "2025-06-01T00:00:00Z",
+          "@type": "XSD.DateTime"
+        },
+        "Openingsurenspecificatie.geldigTot": {
+          "@value": "2025-06-30T23:59:59Z",
+          "@type": "XSD.DateTime"
+        },
+        "Openingsurenspecificatie.open": {
+          "@value": "12:00:00",
+          "@type": "XSD.Time"
+        },
+        "Openingsurenspecificatie.gesloten": {
+          "@value": "22:00:00",
+          "@type": "XSD.Time"
+        }
+      },
+      "Infrastructuur.beschikbaarheid": {
+        "@type": "Beschikbaarheid",
+        "Beschikbaarheid.periode": {
+          "Periode.van": {
+            "@type": "Moment",
+            "Moment.inXSDDatumTijd": {
+              "@value": "2025-06-01T00:00:00Z",
+              "@type": "XSD.DateTime"
+            }
+          },
+          "Periode.tot": {
+            "@type": "Moment",
+            "Moment.inXSDDatumTijd": {
+              "@value": "2025-06-30T23:59:59Z",
+              "@type": "XSD.DateTime"
+            }
+          }
+        },
+        "Beschikbaarheid.openingsuren": {
+          "@value": "14:00:00-22:00:00"
+        }
+      },
+      "Infrastructuur.faciliteit": [
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Kleedkamer Mannen",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerMannen"
+          }
+        },
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Kleedkamer Vrouwen",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/kleedkamerVrouwen"
+          }
+        },
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Klimrek",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/klimrek"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "_:RES001",
+      "@type": "Infrastructuurreservatie",
+      "Infrastructuurreservatie.infrastructuur": [
+        {
+          "@id": "_:INF001"
+        }
+      ],
+      "Infrastructuurreservatie.status": [
+        {
+          "@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/inBehandeling"
+        }
+      ],
+      "Infrastructuurreservatie.periode": {
+        "@type": "Periode",
+        "Periode.van": {
+          "@type": "Moment",
+          "Moment.inXSDDatumTijd": {
+            "@value": "2025-06-20T18:00:00Z",
+            "@type": "XSD.DateTime"
+          }
+        },
+        "Periode.tot": {
+          "@type": "Moment",
+          "Moment.inXSDDatumTijd": {
+            "@value": "2025-06-20T22:00:00Z",
+            "@type": "XSD.DateTime"
+          }
+        }
+      },
+      "Infrastructuurreservatie.gereserveerdVoor": {
+        "@type": "Activiteit",
+        "Activiteit.type": {
+          "@id": "https://data.vlaanderen.be/id/concept/Activiteittype/basketbaltraining"
+        }
+      },
+      "Infrastructuurreservatie.gereserveerdDoor": {
+        "@type": "Persoon",
+        "alternatieveNaam": {
+          "@value": "Coach Sportclub Basketbalploeg",
+          "@language": "nl"
+        }
+      }
+    },
+    {
+      "@id": "_:RES002",
+      "@type": "Infrastructuurreservatie",
+      "Infrastructuurreservatie.infrastructuur": [
+        {
+          "@id": "_:INF002"
+        }
+      ],
+      "Infrastructuurreservatie.status": [
+        {
+          "@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/bevestigd"
+        }
+      ],
+      "Infrastructuurreservatie.periode": {
+        "@type": "Periode",
+        "Periode.van": {
+          "@type": "Moment",
+          "Moment.inXSDDatumTijd": {
+            "@value": "2025-06-20T18:00:00Z",
+            "@type": "XSD.DateTime"
+          }
+        },
+        "Periode.tot": {
+          "@type": "Moment",
+          "Moment.inXSDDatumTijd": {
+            "@value": "2025-06-20T22:00:00Z",
+            "@type": "XSD.DateTime"
+          }
+        }
+      },
+      "Infrastructuurreservatie.gereserveerdVoor": {
+        "@type": "Activiteit",
+        "Activiteit.type": {
+          "@id": "https://data.vlaanderen.be/id/concept/Activiteittype/gymnastiek"
+        }
+      },
+      "Infrastructuurreservatie.gereserveerdDoor": {
+        "@type": "Persoon",
+        "alternatieveNaam": {
+          "@value": "Coach Gymnasten",
+          "@language": "nl"
+        }
+      }
+    }
+  ]
 }

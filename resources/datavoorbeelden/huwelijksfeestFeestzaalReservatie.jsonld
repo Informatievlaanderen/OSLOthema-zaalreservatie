@@ -1,6 +1,6 @@
 {
   "@context": [
-"https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
+"https://test.data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
     "https://data.vlaanderen.be/context/persoon-basis.jsonld",
     {
       "XSD.DateTime": "http://www.w3.org/2001/XMLSchema#DateTime",
@@ -11,9 +11,9 @@
     {
       "@id": "_:IRD001",
       "@type": "Infrastructuurreservatiedienst",
-      "voorkeursnaam": { "@value": "Gemeente Mortsel", "@language": "nl" },
+      "PubliekeOrganisatie.voorkeursnaam": { "@value": "Gemeente Mortsel", "@language": "nl" },
       "Infrastructuurreservatiedienst.infrastructuur": [ {"@id": "_:INF001"} ],
-      "produceert": [ {"@id": "_:RES001"} ]
+      "Infrastructuurreservatiedienst.produceert": [ {"@id": "_:RES001"} ]
     },
     {
       "@id": "_:INF001",
@@ -29,16 +29,16 @@
       }],
       "Infrastructuurreservatie.periode": {
         "@type": "Periode",
-        "van": { "@type": "Moment", "inXSDDateTime": { "@value": "2025-07-17T12:00:00Z" , "@type": "XSD.DateTime" } },
-        "tot": { "@type": "Moment", "inXSDDateTime": { "@value": "2025-07-18T12:00:00Z" , "@type": "XSD.DateTime" } }
+        "Periode.van": { "@type": "Moment", "Moment.inXSDDatumTijd": { "@value": "2025-07-17T12:00:00Z" , "@type": "XSD.DateTime" } },
+        "Periode.tot": { "@type": "Moment", "Moment.inXSDDatumTijd": { "@value": "2025-07-18T12:00:00Z" , "@type": "XSD.DateTime" } }
       },
-      "gereserveerdVoor": {
+      "Infrastructuurreservatie.gereserveerdVoor": {
         "@type": "Activiteit",
         "Activiteit.type": {
           "@id": "https://data.vlaanderen.be/id/concept/Activiteittype/huwelijksreceptie"
         }
       },
-      "gereserveerdDoor": {
+      "Infrastructuurreservatie.gereserveerdDoor": {
         "@type": "Persoon",
         "voornaam": { "@value": "Filip", "@language": "nl" }
       }

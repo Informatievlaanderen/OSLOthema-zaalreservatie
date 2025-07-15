@@ -1,89 +1,151 @@
 {
-    "@context": [
-      "https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
-      "https://data.vlaanderen.be/context/persoon-basis.jsonld",
-      {
-        "XSD.DateTime": "http://www.w3.org/2001/XMLSchema#DateTime",
-        "XSD.Time": "http://www.w3.org/2001/XMLSchema#Time"
-      }
-    ],
-    "@graph": [
+  "@context": [
+    "https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
+    "https://data.vlaanderen.be/context/persoon-basis.jsonld",
+    {
+      "XSD.DateTime": "http://www.w3.org/2001/XMLSchema#DateTime",
+      "XSD.Time": "http://www.w3.org/2001/XMLSchema#Time"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "_:IRD001",
+      "@type": "Infrastructuurreservatiedienst",
+      "Infrastructuurreservatiedienst.infrastructuur": [
         {
-          "@id": "_:IRD001",
-          "@type": "Infrastructuurreservatiedienst",
-          "Infrastructuurreservatiedienst.infrastructuur": [ { "@id": "_:INF001" } ],
-          "produceert": [ { "@id": "_:RES001" } ]
+          "@id": "_:INF001"
+        }
+      ],
+      "Infrastructuurreservatiedienst.produceert": [
+        {
+          "@id": "_:RES001"
+        }
+      ]
+    },
+    {
+      "@id": "_:INF001",
+      "@type": "Binnenruimte",
+      "Infrastructuur.naam": {
+        "@value": "Vergaderzaal 2 Cultureel Centrum",
+        "@language": "nl"
+      },
+      "Infrastructuur.type": {
+        "@id": "https://data.vlaanderen.be/id/concept/Binnenruimtetype/Vergaderzaal"
+      },
+      "Infrastructuur.annuleringsvoorwaarden": {
+        "@value": "Annulatie is kosteloos tot 7 kalenderdagen voor de reservatie.",
+        "@language": "nl"
+      },
+      "Infrastructuur.capaciteit": {
+        "@type": "Capaciteit",
+        "Capaciteit.waarde": {
+          "@value": 75
         },
-        {
-          "@id": "_:INF001",
-          "@type": "Binnenruimte",
-          "Infrastructuur.naam": {
-            "@value": "Vergaderzaal 2 Cultureel Centrum",
-            "@language": "nl"
-          },
-          "Infrastructuur.type": { "@id": "https://data.vlaanderen.be/id/concept/Binnenruimtetype/Vergaderzaal" },
-          "annuleringsvoorwaarden": {
-            "@value": "Annulatie is kosteloos tot 7 kalenderdagen voor de reservatie.",
-            "@language": "nl" },
-          "capaciteit": {
-            "@type": "Capaciteit",
-            "waarde": { "@value": 75 },
-            "eenheid": { "@id": "http://example.org/aantalPersonen" }
-          },
-          "openingsuren": {
-            "@type": "Openingsurenspecificatie",
-            "geldigVan": { "@value": "2025-06-01T00:00:00Z", "@type": "XSD.DateTime" },
-            "geldigTot": { "@value": "2025-06-30T23:59:59Z", "@type": "XSD.DateTime" },
-            "open": { "@value": "07:00:00", "@type": "XSD.Time" },
-            "gesloten": { "@value": "23:30:00", "@type": "XSD.Time" }
-          },
-          "beschikbaarheid": {
-            "@type": "Beschikbaarheid",
-            "Beschikbaarheid.periode": {
-              "geldigVan": { "@value": "2025-06-01T00:00:00Z", "@type": "XSD.DateTime" },
-              "geldigTot": { "@value": "2025-06-30T23:59:59Z", "@type": "XSD.DateTime" }
-            },
-            "Beschikbaarheid.openingsuren": { "@value": "11:00:00-23:00:00" }
-          },
-          "faciliteit": [
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Catering",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/catering" }
-            },
-            {
-              "@type": "Faciliteit",
-              "beschrijving": "Geluidsinstallatie",
-              "type": { "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/klankinstallatie" }
-            }
-          ]
+        "Capaciteit.eenheid": {
+          "@id": "http://example.org/aantalPersonen"
+        }
+      },
+      "Infrastructuur.openingsuren": {
+        "@type": "Openingsurenspecificatie",
+        "Openingsurenspecificatie.geldigVan": {
+          "@value": "2025-06-01T00:00:00Z",
+          "@type": "XSD.DateTime"
         },
-        {
-            "@id": "_:RES001",
-            "@type": "Infrastructuurreservatie",
-          "Infrastructuurreservatie.infrastructuur": [ { "@id": "_:INF001" } ],
-          "Infrastructuurreservatie.status": [ {
-"@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/geannuleerd"
-          } ],
-          "Infrastructuurreservatie.periode": {
-            "@type": "Periode",
-            "van": {
-              "@type": "Moment",
-              "inXSDDateTime": { "@value": "2025-06-15T18:00:00Z", "@type": "XSD.DateTime" }
-            },
-            "tot": {
-              "@type": "Moment",
-              "inXSDDateTime": { "@value": "2025-06-15T23:00:00Z", "@type": "XSD.DateTime" }
+        "Openingsurenspecificatie.geldigTot": {
+          "@value": "2025-06-30T23:59:59Z",
+          "@type": "XSD.DateTime"
+        },
+        "Openingsurenspecificatie.open": {
+          "@value": "07:00:00",
+          "@type": "XSD.Time"
+        },
+        "Openingsurenspecificatie.gesloten": {
+          "@value": "23:30:00",
+          "@type": "XSD.Time"
+        }
+      },
+      "Infrastructuur.beschikbaarheid": {
+        "@type": "Beschikbaarheid",
+        "Beschikbaarheid.periode": {
+          "Periode.van": {
+            "@type": "Moment",
+            "Moment.inXSDDatumTijd": {
+              "@value": "2025-06-01T00:00:00Z",
+              "@type": "XSD.DateTime"
             }
           },
-          "gereserveerdVoor": {
-            "@type": "Activiteit",
-            "Activiteit.type": {
-"@id": "https://data.vlaanderen.be/id/concept/Activiteittype/buurtvergadering" }
-          },
-          "gereserveerdDoor": {
-            "@type": "Persoon", "voornaam": { "@value": "Kristof", "@language": "nl" }
+          "Periode.tot": {
+            "@type": "Moment",
+            "Moment.inXSDDatumTijd": {
+              "@value": "2025-06-30T23:59:59Z",
+              "@type": "XSD.DateTime"
+            }
+          }
+        },
+        "Beschikbaarheid.openingsuren": {
+          "@value": "11:00:00-23:00:00"
+        }
+      },
+      "Infrastructuur.faciliteit": [
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Catering",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/catering"
+          }
+        },
+        {
+          "@type": "Faciliteit",
+          "Faciliteit.beschrijving": "Geluidsinstallatie",
+          "Faciliteit.type": {
+            "@id": "https://data.vlaanderen.be/id/concept/Faciliteittype/klankinstallatie"
           }
         }
-    ]
+      ]
+    },
+    {
+      "@id": "_:RES001",
+      "@type": "Infrastructuurreservatie",
+      "Infrastructuurreservatie.infrastructuur": [
+        {
+          "@id": "_:INF001"
+        }
+      ],
+      "Infrastructuurreservatie.status": [
+        {
+          "@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/geannuleerd"
+        }
+      ],
+      "Infrastructuurreservatie.periode": {
+        "@type": "Periode",
+        "Periode.van": {
+          "@type": "Moment",
+          "Moment.inXSDDatumTijd": {
+            "@value": "2025-06-15T18:00:00Z",
+            "@type": "XSD.DateTime"
+          }
+        },
+        "Periode.tot": {
+          "@type": "Moment",
+          "Moment.inXSDDatumTijd": {
+            "@value": "2025-06-15T23:00:00Z",
+            "@type": "XSD.DateTime"
+          }
+        }
+      },
+      "Infrastructuurreservatie.gereserveerdVoor": {
+        "@type": "Activiteit",
+        "Activiteit.type": {
+          "@id": "https://data.vlaanderen.be/id/concept/Activiteittype/buurtvergadering"
+        }
+      },
+      "Infrastructuurreservatie.gereserveerdDoor": {
+        "@type": "Persoon",
+        "voornaam": {
+          "@value": "Kristof",
+          "@language": "nl"
+        }
+      }
+    }
+  ]
 }
