@@ -1,0 +1,47 @@
+{
+  "@context": [
+"https://data.vlaanderen.be/doc/applicatieprofiel/zaalreservatie/ontwerpstandaard/2025-04-18/context/zaalreservatie.jsonld",
+    "https://data.vlaanderen.be/context/persoon-basis.jsonld",
+    {
+      "XSD.DateTime": "http://www.w3.org/2001/XMLSchema#DateTime",
+      "XSD.Time": "http://www.w3.org/2001/XMLSchema#Time"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "_:IRD001",
+      "@type": "Infrastructuurreservatiedienst",
+      "voorkeursnaam": { "@value": "Gemeente Mortsel", "@language": "nl" },
+      "Infrastructuurreservatiedienst.infrastructuur": [ {"@id": "_:INF001"} ],
+      "produceert": [ {"@id": "_:RES001"} ]
+    },
+    {
+      "@id": "_:INF001",
+      "@type": "Binnenruimte",
+      "Infrastructuur.naam": { "@value": "Feestzaal Gemeente Mortsel", "@language": "nl" }
+    },
+    {
+      "@id": "_:RES001",
+      "@type": "Infrastructuurreservatie",
+      "Infrastructuurreservatie.infrastructuur": [ {"@id": "_:INF001"} ],
+      "Infrastructuurreservatie.status": [{
+"@id": "https://data.vlaanderen.be/id/concept/Infrastructuurreservatiestatustype/inBehandeling"
+      }],
+      "Infrastructuurreservatie.periode": {
+        "@type": "Periode",
+        "van": { "@type": "Moment", "inXSDDateTime": { "@value": "2025-07-17T12:00:00Z" , "@type": "XSD.DateTime" } },
+        "tot": { "@type": "Moment", "inXSDDateTime": { "@value": "2025-07-18T12:00:00Z" , "@type": "XSD.DateTime" } }
+      },
+      "gereserveerdVoor": {
+        "@type": "Activiteit",
+        "Activiteit.type": {
+          "@id": "https://data.vlaanderen.be/id/concept/Activiteittype/huwelijksreceptie"
+        }
+      },
+      "gereserveerdDoor": {
+        "@type": "Persoon",
+        "voornaam": { "@value": "Filip", "@language": "nl" }
+      }
+    }
+  ]
+}
