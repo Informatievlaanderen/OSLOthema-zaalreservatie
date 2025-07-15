@@ -12,8 +12,9 @@ EAP-files met de UML-diagrammen.\
 Configuratie en bestanden voor het publiceren van de specs in de folders config, site-skeleton en templates.\
 Een [changelog](https://github.com/Informatievlaanderen/OSLOthema-zaalreservatie/blob/master/CHANGELOG) met wijzigingen tov vorige versies.\
 Diverse resources:
-- Een overzicht van de [use cases](resources/datavoorbeelden/)
-- Een map met [datavoorbeelden](resources/datavoorbeelden.md).
+- Een overzicht van de [use cases](resources/use-cases/).
+- Een map met [datavoorbeelden](resources/datavoorbeelden/).
+- [Modelleerrapport](resources/20250715-Modelleerrapport-Zaalreservatie.pdf).
 
 
 ## Issues
